@@ -7,7 +7,7 @@ const TermsOfService = () => {
             animate={{ opacity: 1 }}
             className="max-w-4xl mx-auto px-4 py-12"
         >
-            <h1 className="text-3xl font-bold text-green-400 mb-8">Terms of Service</h1>
+            <h1 className="text-3xl font-bold text-green-400 mb-8 mt-8">Terms of Service</h1>
             <div className="prose prose-invert prose-green">
                 <h2>1. Acceptance of Terms</h2>
                 <p>By accessing and using CyberCipher, you accept and agree to be bound by these Terms of Service.</p>

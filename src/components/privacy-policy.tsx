@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
             animate={{ opacity: 1 }}
             className="max-w-4xl mx-auto px-4 py-12"
         >
-            <h1 className="text-3xl font-bold text-green-400 mb-8">Privacy Policy</h1>
+            <h1 className="text-3xl font-bold text-green-400 mb-8 mt-8">Privacy Policy</h1>
             <div className="prose prose-invert prose-green">
                 <h2>1. Information We Collect</h2>
                 <p>We collect information that you provide directly to us when using the CyberCipher tool.</p>
