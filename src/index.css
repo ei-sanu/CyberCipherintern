@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a;
+}
+
+/* Custom slider styles */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #22c55e;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #22c55e;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* Animation for smooth page transitions */
+body {
+  overflow-x: hidden;
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+/* Matrix-style background animation */
+@keyframes matrix {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
+
+.matrix-char {
+  animation: matrix 3s linear infinite;
+}
+
+/* Hover effect for cards */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom focus styles */
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
+}
+
+/* Button ripple effect */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-ripple:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Clerk authentication styling */
+.clerk-auth-container .cl-rootBox {
+  width: 100%;
+}
+
+.clerk-auth-container .cl-card {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.clerk-auth-container .cl-headerTitle {
+  color: white !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+}
+
+.clerk-auth-container .cl-headerSubtitle {
+  color: #9ca3af !important;
+}
+
+.clerk-auth-container .cl-socialButtonsBlockButton {
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
+  color: white !important;
+}
+
+.clerk-auth-container .cl-socialButtonsBlockButton:hover {
+  background-color: #4b5563 !important;
+}
+
+.clerk-auth-container .cl-formFieldInput {
+  background-color: #111827 !important;
+  border-color: #4b5563 !important;
+  color: white !important;
+}
+
+.clerk-auth-container .cl-formFieldInput:focus {
+  border-color: #22c55e !important;
+}
+
+.clerk-auth-container .cl-formFieldLabel {
+  color: #d1d5db !important;
+}
+
+.clerk-auth-container .cl-footerActionLink {
+  color: #22c55e !important;
+}
+
+.clerk-auth-container .cl-footerActionLink:hover {
+  color: #16a34a !important;
+}
+
+.clerk-auth-container .cl-formButtonPrimary {
+  background: linear-gradient(to right, #22c55e, #9333ea) !important;
+}
+
+.clerk-auth-container .cl-formButtonPrimary:hover {
+  background: linear-gradient(to right, #16a34a, #7c3aed) !important;
+}
+
+.clerk-auth-container .cl-dividerLine {
+  background-color: #4b5563 !important;
+}
+
+.clerk-auth-container .cl-dividerText {
+  color: #9ca3af !important;
+}
+
+.clerk-auth-container .cl-formFieldErrorText {
+  color: #f87171 !important;
+}
+
+.clerk-auth-container .cl-identityPreviewText {
+  color: #d1d5db !important;
+}
+
+.clerk-auth-container .cl-formResendCodeLink {
+  color: #22c55e !important;
+}
+
+.clerk-auth-container .cl-formResendCodeLink:hover {
+  color: #16a34a !important;
+}
