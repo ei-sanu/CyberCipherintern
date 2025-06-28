@@ -111,7 +111,7 @@ const Home = () => {
                 <ChevronRight className="h-5 w-5" />
               </motion.button>
             </Link>
-            
+
             <motion.button
               className="px-8 py-4 border-2 border-green-500 rounded-lg font-semibold text-green-400 hover:bg-green-500/10 transition-all"
               whileHover={{ scale: 1.05 }}
